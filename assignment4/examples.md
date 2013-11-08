@@ -2,6 +2,9 @@
 =======
 
 ### Пример - Популярни структури от данни от стандартната библиотека на C++ - STL ###
+
+Сорс файл - [main.cpp](https://github.com/IvanIvanov/ds2013/blob/master/assignment4/stl_code/main.cpp), който демонстрира как се използват едни от най-разпространените контeйнери вградени в стандартната STL библиотека на C++.
+
 ```C++
 #include <iostream>
 #include <string>
