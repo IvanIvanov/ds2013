@@ -3,7 +3,7 @@
 
 ### Пример - Реализация на тип данни Set (множество) онсована на дърво за двоично търсене. ###
 
-Хедърен файл - [bst-set.h]() с реализацията на Set.
+Хедърен файл - [bst-set.h](https://github.com/IvanIvanov/ds2013/blob/master/assignment4/set_code/bst-set.h) с реализацията на Set.
 ```C++
 #ifndef BST_SET_H_
 #define BST_SET_H_
@@ -73,7 +73,7 @@ int Set<T>::Size() {
 
 ```
 
-Хедърен файл - [set-node.h]() с реализацията на възлите на дърветата за двоично търсене използвани при реализацията на Set.
+Хедърен файл - [set-node.h](https://github.com/IvanIvanov/ds2013/blob/master/assignment4/set_code/set-node.h) с реализацията на възлите на дърветата за двоично търсене използвани при реализацията на Set.
 ```C++
 #ifndef SET_NODE_H_
 #define SET_NODE_H_
@@ -260,7 +260,7 @@ void DeleteTree(Node<T>* root) {
 
 ```
 
-Сорс файл - [main.cpp](), който демонстрира операциите върху класа Set.
+Сорс файл - [main.cpp](https://github.com/IvanIvanov/ds2013/blob/master/assignment4/set_code/main.cpp), който демонстрира операциите върху класа Set.
 ```C++
 #include <iostream>
 #include <string>
@@ -360,7 +360,7 @@ int main(void) {
 
 ### Пример - Реализация на тип данни Map (речник, който на ключове съпоставя стойности) основана на дърво за двоично търсене. ###
 
-Хедърен файл - [bst-map.h]() с реализацията на Map.
+Хедърен файл - [bst-map.h](https://github.com/IvanIvanov/ds2013/blob/master/assignment4/set_code/main.cpp) с реализацията на Map.
 ```C++
 #ifndef BST_MAP_H_
 #define BST_MAP_H_
@@ -440,7 +440,7 @@ int Map<K, V>::Size() {
 
 ```
 
-Хедърен файл - [map-node.h]() с реализацията на възлите на дърветата за двоично търсене използвани при реализацията на Map.
+Хедърен файл - [map-node.h](https://github.com/IvanIvanov/ds2013/blob/master/assignment4/map_code/map-node.h) с реализацията на възлите на дърветата за двоично търсене използвани при реализацията на Map.
 ```C++
 #ifndef MAP_NODE_H_
 #define MAP_NODE_H_
@@ -631,7 +631,7 @@ void DeleteTree(Node<K, V>* root) {
 
 ```
 
-Сорс файл - [main.cpp](), който демонстрира операциите върху класа Map.
+Сорс файл - [main.cpp](https://github.com/IvanIvanov/ds2013/blob/master/assignment4/map_code/main.cpp), който демонстрира операциите върху класа Map.
 ```C++
 #include <iostream>
 #include <string>
