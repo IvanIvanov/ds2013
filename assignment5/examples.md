@@ -3,7 +3,7 @@
 
 ### Пример - сортиране чрез метода на селекцията (selection sort) ###
 
-Сорс файл - [selection-sort.cpp](), който предоствая примерна реализация на сортиране чрез метода на селекцията:
+Сорс файл - [selection-sort.cpp](https://github.com/IvanIvanov/ds2013/blob/master/assignment5/selection-sort.cpp), който предоствая примерна реализация на сортиране чрез метода на селекцията:
 
 ```C++
 #include <iostream>
@@ -47,7 +47,7 @@ int main(void) {
 
 ### Пример - сортиране чрез метода на вмъкването (insertion sort) ###
 
-Сорс файл - [insertion-sort.cpp](), който предоствая примерна реализация на сортиране чрез метода на вмъкването:
+Сорс файл - [insertion-sort.cpp](https://github.com/IvanIvanov/ds2013/blob/master/assignment5/insertion-sort.cpp), който предоствая примерна реализация на сортиране чрез метода на вмъкването:
 
 ```C++
 #include <iostream>
@@ -96,7 +96,7 @@ int main(void) {
 
 ### Пример - сортиране чрез метода на сливането (merge sort) ###
 
-Сорс файл - [merge-sort.cpp](), който предоствая примерна реализация на сортиране чрез метода на сливането:
+Сорс файл - [merge-sort.cpp](https://github.com/IvanIvanov/ds2013/blob/master/assignment5/merge-sort.cpp), който предоствая примерна реализация на сортиране чрез метода на сливането:
 
 ```C++
 #include <iostream>
@@ -168,7 +168,7 @@ int main(void) {
 
 ### Пример - сортиране чрез метода на бързата сортировка (quick sort) ###
 
-Сорс файл - [quick-sort.cpp](), който предоствая примерна реализация на сортиране чрез метода на бързата сортировка:
+Сорс файл - [quick-sort.cpp](https://github.com/IvanIvanov/ds2013/blob/master/assignment5/quick-sort.cpp), който предоствая примерна реализация на сортиране чрез метода на бързата сортировка:
 
 ```C++
 #include <iostream>
