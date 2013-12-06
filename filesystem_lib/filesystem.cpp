@@ -17,7 +17,7 @@ bool IsDirectory(const string& path) {
 }
 
 bool IsValid(const string& path) {
-  DWORD attributes = GetFileAttributes(path.c_str());
+  DWORD attributes = GetFileAttributesA(path.c_str());
   return attributes != INVALID_FILE_ATTRIBUTES;
 }
 
