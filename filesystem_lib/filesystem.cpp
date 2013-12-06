@@ -50,7 +50,7 @@ vector<string> GetFilesAndDirectoriesFlat(const string& directory) {
 
   string path = directory + "\\*";
   WIN32_FIND_DATAA find_data;
-  HANDLE find_data_handle = FindFirstFile(path.c_str(), &find_data);
+  HANDLE find_data_handle = FindFirstFileA(path.c_str(), &find_data);
 
   if (find_data_handle == INVALID_HANDLE_VALUE) {
     return files_and_directories;
@@ -61,7 +61,7 @@ vector<string> GetFilesAndDirectoriesFlat(const string& directory) {
         string(find_data.cFileName) != "..") {
       files_and_directories.push_back(find_data.cFileName);
     }
-    if (!FindNextFile(find_data_handle, &find_data)) break;
+    if (!FindNextFileA(find_data_handle, &find_data)) break;
   }
   FindClose(find_data_handle);
   return files_and_directories;
