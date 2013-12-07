@@ -55,7 +55,7 @@ int main(int argc, char* argv[]) {
     vector<string>& filenames = it->second;
     for (int i = 0; i < filenames.size(); i++) {
       size_t bytes = FileSizeInBytes(filenames[i]);
-      cout << filenames[i] << " (" << endl;
+      cout << filenames[i] << endl;
     }
     cout << endl;
   }
