@@ -45,6 +45,11 @@ string ReadFileContents(const string& filename) {
   return content;
 }
 
+size_t FileSizeInBytes(const string& filename) {
+  // TODO: implement more efficiently.
+  return ReadFileContents(filename).size();
+}
+
 vector<string> GetFilesAndDirectoriesFlat(const string& directory) {
   vector<string> files_and_directories;
 

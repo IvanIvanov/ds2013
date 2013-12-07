@@ -32,6 +32,9 @@ string StripBasePath(const string& path, const string& base_path);
 // contents as binary bytes and packs them in a string which is returned.
 string ReadFileContents(const string& filename);
 
+// Returns the number of bytes the given file contains.
+size_t FileSizeInBytes(const string& filename);
+
 // Returns the names of all files and directories directly contained in a
 // given directory specified by its absolute or relative path.
 vector<string> GetFilesAndDirectoriesFlat(const string& directory);
