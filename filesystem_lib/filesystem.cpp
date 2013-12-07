@@ -34,10 +34,10 @@ string StripBasePath(const string& path, const string& base_path) {
 }
 
 string ReadFileContents(const string& filename) {
-  ifstream stream(filename, std::ifstream::binary);
+  ifstream stream(filename.c_str(), std::ifstream::binary);
   string content;
   char buf[BUFFER_SIZE];
-  while (!stream.eof()) {
+  while (!stream.fail() && !stream.eof()) {
     stream.read(buf, BUFFER_SIZE);
     content += string(buf, stream.gcount());
   }
