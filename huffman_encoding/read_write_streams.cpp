@@ -2,9 +2,6 @@
 
 #include <string>
 
-
-#include <iostream>
-
 using std::string;
 
 StringReadStream::StringReadStream(string byte_string) {
@@ -86,13 +83,10 @@ FileReadStream::~FileReadStream() {
 
 bool FileReadStream::ReadBit(char& bit) {
   if (bit_index_ >= total_bits_) {
-    //std::cout << "Fuck!" << std::endl;
-    //std::cout << bit_index_ << total_bits_ << std::endl;
     file_stream_.read(buffer_, STREAM_BUFFER_SIZE);
     total_bits_ = (unsigned int) file_stream_.gcount() * 8;
     bit_index_ = 0;
     if (total_bits_ == 0) {
-      //std::cout << "##################" << std::endl;
       return false;
     }
   }
