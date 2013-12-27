@@ -28,6 +28,17 @@ bool IsValid(const string& path);
 // it's prefix then the value of path is returned.
 string StripBasePath(const string& path, const string& base_path);
 
+// Returns a new path string with the last component of the input path removed.
+// For example removing the last component from the path:
+//
+//     D:\foo\bar
+//
+// Results in:
+//
+//     D:\foo\
+//
+string StripLastPathComponent(const string& path);
+
 // Reads a file given by a absolute or relative path by treating it's
 // contents as binary bytes and packs them in a string which is returned.
 string ReadFileContents(const string& filename);

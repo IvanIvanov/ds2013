@@ -33,6 +33,22 @@ string StripBasePath(const string& path, const string& base_path) {
   }
 }
 
+string StripLastPathComponent(const string& path) {
+  string result = path;
+  int n = result.size();
+  // Remove trailing forward and backward slashes.
+  while (n > 0 && (result[n - 1] == '/' || result[n - 1] == '\\')) {
+    n--;
+    result.erase(result.begin() + n);
+  }
+  // Remove everything until a forward or backward slash.
+  while (n > 0 && result[n - 1] != '/' && result[n - 1] != '\\') {
+    n--;
+    result.erase(result.begin() + n);
+  }
+  return result;
+}
+
 string ReadFileContents(const string& filename) {
   ifstream stream(filename.c_str(), std::ifstream::binary);
   string content;
